@@ -117,8 +117,8 @@ impl AxisAlignedBoundingBox {
         }
     }
 
-    /// Checks wether this aabb intersects with other 
-    pub fn intersects(&self, other: &Self) -> bool {
+    /// Checks wether this aabb overlaps with other 
+    pub fn overlaps(&self, other: &Self) -> bool {
         let min_a = self.min();
         let max_a = self.max();
         let min_b = other.min();
